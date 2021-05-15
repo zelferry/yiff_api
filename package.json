@@ -1,0 +1,34 @@
+{
+  "name": "yiff_api",
+  "version": "2.0.0-hotflix",
+  "description": "ultra yiff api ÒwÓ",
+  "main": "src/nain.js",
+  "types": "esm/ts/index.d.ts",
+  "exports": {
+    ".": [
+      {
+        "require": "./src/nain.js",
+        "import": "./esm/yiff.mjs"
+      },
+      "./src/nain.js"
+    ],
+    "./esm": "./esm/yiff.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e621-lib",
+    "e621-fech"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "author": "zelferry",
+  "license": "ISC",
+  "dependencies": {
+    "miniget": "^4.2.0",
+    "node-fetch": "^2.6.1",
+    "yiffy": "^2.0.11"
+  }
+}
