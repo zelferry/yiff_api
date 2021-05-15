@@ -1,6 +1,6 @@
 {
   "name": "yiff_api",
-  "version": "2.0.0-hotflix",
+  "version": "2.0.1-hotflix",
   "description": "ultra yiff api ÒwÓ",
   "main": "src/nain.js",
   "types": "esm/ts/index.d.ts",
