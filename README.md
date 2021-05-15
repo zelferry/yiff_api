@@ -13,7 +13,9 @@ y.<subEvent>
 ```
 
 `<...> = required`
+
 `[...] = optional`
+
 `event` = event to get "yiffs"
 
 `opitions` = options depending on the EVENT
@@ -25,7 +27,9 @@ y.<subEvent>
 # existing events:
 
 **e621** = search on e621
+
 **e926** = search on e926
+
 **yiff** = random yiff
 
 ---
