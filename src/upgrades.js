@@ -2,9 +2,10 @@ const miniget = require('miniget');
 
 const pkg = require('../package.json');
 const UPDATE_INTERVAL = 1000 * 60 * 60 * 12;
+//console.log(UPDATE_INTERVAL)
 exports.lastUpdateCheck = 0;
 exports.checkForUpdates = () => {
-  if (!process.env.YTDL_NO_UPDATE && !pkg.version.startsWith('2.0.1-') &&
+  if (!process.env.YTDL_NO_UPDATE && !pkg.version.startsWith('2.0.2-') &&
     Date.now() - exports.lastUpdateCheck >= UPDATE_INTERVAL) {
     exports.lastUpdateCheck = Date.now();
     return miniget('https://raw.githubusercontent.com/zelferry/yiff_api/master/package.json', {

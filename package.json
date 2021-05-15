@@ -1,6 +1,6 @@
 {
   "name": "yiff_api",
-  "version": "2.0.1-hotflix",
+  "version": "2.0.2-hotflix",
   "description": "ultra yiff api ÒwÓ",
   "main": "src/nain.js",
   "types": "esm/ts/index.d.ts",
@@ -30,5 +30,14 @@
     "miniget": "^4.2.0",
     "node-fetch": "^2.6.1",
     "yiffy": "^2.0.11"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zelferry/yiff_api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zelferry/yiff_api/issues"
+  },
+  "homepage": "https://github.com/zelferry/yiff_api#readme"
 }
