@@ -154,7 +154,7 @@ y.synormorph().then(console.log)
 ```js
 var yiff = require("yiff_api")
 var y = new yiff.yiff()
-ler y_1 = new yiff.e621()
+let y_1 = new yiff.e621()
 
 y_1.getposts('toriel').then(x => {
 	var { posts } = x;
@@ -171,7 +171,7 @@ y.gay().then(console.log)
 ## async / await:
 ```js
 var yiff = require("yiff_api")
-ler y = new yiff.e621()
+let y = new yiff.e621()
 
 async function main() {
 	let x = await y.getposts('toriel');
