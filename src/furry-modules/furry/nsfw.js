@@ -1,12 +1,8 @@
 const { EventEmitter } = require('events');
 
-const ops = { method: 'GET', headers: { 'User-Agent': 'crosdid/1.0' } };
-const fetch = require('node-fetch');
 
 var Yiffy = require('yiffy');
 const y = new Yiffy();
-
-//y.furry.hug("json")
 
 class yiff extends EventEmitter {
 	constructor() {

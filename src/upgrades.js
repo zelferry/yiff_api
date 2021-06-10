@@ -1,11 +1,13 @@
 const miniget = require('miniget');
 
 const pkg = require('../package.json');
-const UPDATE_INTERVAL = 1000 * 60 * 60 * 12;
-//console.log(UPDATE_INTERVAL)
+let {v} = require('../src/config/config_.json')
+
+const UPDATE_INTERVAL = 1000 * 5;
 exports.lastUpdateCheck = 0;
+
 exports.checkForUpdates = () => {
-  if (!process.env.YTDL_NO_UPDATE && !pkg.version.startsWith('2.0.2-') &&
+  if (!process.env.noUpdate && !pkg.version.startsWith(v) &&
     Date.now() - exports.lastUpdateCheck >= UPDATE_INTERVAL) {
     exports.lastUpdateCheck = Date.now();
     return miniget('https://raw.githubusercontent.com/zelferry/yiff_api/master/package.json', {
@@ -16,7 +18,7 @@ exports.checkForUpdates = () => {
       }
     }, err => {
       console.warn('Error checking for updates:', err.message);
-      console.warn('You can disable this check by setting the `NO_UPDATE` env variable.');
+      console.warn('You can disable this check by setting the `noUpdate` env variable.');
     });
   }
   return null;

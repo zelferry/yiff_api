@@ -6,6 +6,7 @@ let e6_config = {
 
 const ops = { method: 'GET', headers: { 'User-Agent': 'crosdid/1.0' } };
 const fetch = require('node-fetch');
+// require('node-fetch');
 
 function getOne(haystack, arr) {
 	return arr.find(v => haystack.includes(v));
@@ -20,7 +21,7 @@ class e6 extends EventEmitter {
 		if (!opinions) {
 			opinions = {};
 		}
-		this.getdata = fetch;
+		this.getdata = fetch
 		this.blacklist = opinions.blacklist;
 		if (!this.blacklist) {
 			this.blacklist = [];
@@ -44,8 +45,8 @@ class e6 extends EventEmitter {
 		}${page ? `&page=${page}` : ''}`;
 
 		let result = e621 + 'posts.json?' + a;
-		let vc = await this.getdata(result, ops);
-		return vc.json();
+		let vc = await this.getdata(result,ops);
+		return vc.json()
 	}
 	async randompost(tags) {
 		var { posts } = await this.getposts(tags);
