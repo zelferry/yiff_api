@@ -132,6 +132,9 @@ y.getpostByMD5("6fd0b0f2237543bfeee5ca9318a97b46").then(console.log)
 | `straight()` | straight yiffs |
 | `lesbian()` | lesbian yiffs |
 | `synormorph()` | synormorph yiffs |
+| `bulge()` | bulge yiffs |
+| `andromorph()` | andromorph yiffs |
+| `butts()` | butts fursuits |
 | -------- | ----------- |
 
 examples:
@@ -146,6 +149,12 @@ y.straight().then(console.log)
 y.lesbian().then(console.log)
 
 y.synormorph().then(console.log)
+
+y.bulge().then(console.log)
+
+y.andromorph().then(console.log)
+
+y.butts().then(console.log)
 ```
 
 ---

@@ -1,38 +1,41 @@
-const { EventEmitter } = require('events');
-
-
+//const y = new Yiffy();
 var Yiffy = require('yiffy');
-const y = new Yiffy();
 
-class yiff extends EventEmitter {
+class yiff extends Yiffy {
 	constructor() {
 		super();
-		this.yiffdata = y;
+	//	this.jsonArray = ["gay","straight","lesbian","synormorph","bulge","andromorph","butts"]
 	}
 	async gay() {
-		let { yiffdata } = this;
-
-		let result = await yiffdata.furry.yiff.gay('json');
-		return result[0];
+		let result = await this.furry.yiff.gay('json');
+		return result.constructor === Array ? result[0] : result;
 	}
 	async straight() {
-		let { yiffdata } = this;
-
-		let result = await yiffdata.furry.yiff.straight('json');
-		return result[0];
+		let result = await this.furry.yiff.straight('json');
+		return result.constructor === Array ? result[0] : result;
 	}
 	async lesbian() {
-		let { yiffdata } = this;
-
-		let result = await yiffdata.furry.yiff.lesbian('json');
-		return result[0];
+		let result = await this.furry.yiff.lesbian('json');
+		return result.constructor === Array ? result[0] : result;
 	}
 	async synormorph() {
-		let { yiffdata } = this;
-
-		let result = await yiffdata.furry.yiff.gynomorph('json');
-		return result[0];
+		let result = await this.furry.yiff.gynomorph('json');
+		return result.constructor === Array ? result[0] : result;
+	}
+	async bulge() {
+		let result = await this.furry.bulge('json');
+		return result.constructor === Array ? result[0] : result;
+	}
+	async andromorph(){
+		let result = await this.furry.yiff.andromorph('json');
+		return result.constructor === Array ? result[0] : result;
+	}
+	async butts(){
+		let result = await this.furry.butts('json');
+		return result.constructor === Array ? result[0] : result;
 	}
 }
-
+//furry.bulge
+//butts
+//fursuit
 module.exports = yiff;

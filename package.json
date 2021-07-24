@@ -1,6 +1,6 @@
 {
   "name": "yiff_api",
-  "version": "2.0.3-hotflix",
+  "version": "2.0.4-hotflix",
   "description": "ultra yiff api ÒwÓ",
   "main": "src/nain.js",
   "types": "esm/ts/index.d.ts",
@@ -29,7 +29,7 @@
   "dependencies": {
     "miniget": "^4.2.1",
     "node-fetch": "^2.6.1",
-    "yiffy": "^2.0.11"
+    "yiffy": "^2.0.14"
   },
   "devDependencies": {},
   "repository": {
