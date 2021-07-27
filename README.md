@@ -1,4 +1,4 @@
-Hi!!
+Hi!
 and welcome to a SUPER yiff bookstore !!
 with various functions and etc!
 OwO
