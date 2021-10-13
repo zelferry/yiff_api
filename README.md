@@ -5,7 +5,7 @@ OwO
 
 how to use?
 
-```js
+```md
 var yiff = require("yiff_api")
 var y = new yiff.<event>([opitions])
 
